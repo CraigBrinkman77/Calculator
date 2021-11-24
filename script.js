@@ -1,7 +1,6 @@
-// $("button").click(function () {
-//     alert("button clicked");
-// });
-
+$("button").click(function () {
+    alert("button clicked");
+});
 
 function press(element){
     var displayDiv = document.querySelector("#display");
@@ -24,5 +23,6 @@ function setOP(element){
 
 function calculate(){
     var displayDiv = document.querySelector("#display");
-    displayDiv.innerText = parseInt(storedValue + parseInt(displayDiv.innerText));
+    console.log(displayDiv.innerText);
+    displayDiv.innerText = storedValue + parseInt(displayDiv.innerText);
 }
